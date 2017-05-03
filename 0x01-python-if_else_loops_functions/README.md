@@ -193,7 +193,7 @@ Python function that creates a copy of the string; the character at position `n`
 	* to run: `./101-main.py`
 
 ## Authors
-Kristen Loyd        <a href='https://github.com/KRLoyd'>Github</a> ,  <a href='https://www.linkedin.com/in/kristen-loyd-34984a92/>Linkedin</a>
+Kristen Loyd        <a href='https://github.com/KRLoyd'>Github</a> ,  <a href='https://www.linkedin.com/in/kristen-loyd-34984a92/'>Linkedin</a>
 
 ## License
 Public Domain, no copyright protection
