@@ -2,7 +2,11 @@
 if __name__ == "__main__":
     from sys import argv
     from calculator_1 import add, sub, mul, div
-    num_args = len(argv) - 1
-    if num_args != 3:
+    num_args = len(argv)
+    if num_args != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
+    a = int(argv[1])
+    b = int(argv[3])
+    if argv[2] == '+':
+        print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
