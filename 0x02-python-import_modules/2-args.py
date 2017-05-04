@@ -6,6 +6,10 @@ if __name__ == "__main__":
     # check for no arguments
     if num_arg == 0:
         print("{:d} argument.".format(num_arg))
+    # check for only 1 argument
+    elif num_arg == 1:
+        print("{:d} argument:\n{:d}: {:s}".format
+              (num_arg, num_arg, argv[num_arg]))
     # if arguments, print them
     else:  # num_arg > 0
         print("{:d} arguments:".format(num_arg))
