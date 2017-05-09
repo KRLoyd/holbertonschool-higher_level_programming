@@ -4,7 +4,7 @@ def print_reversed_list_integer(my_list=[]):
 
     Arg: list to print
     """
-    if len(my_list) == 0:
+    if my_list is None:
         return
     for i in reversed(my_list):
         print("{:d}".format(i))
