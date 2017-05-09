@@ -6,7 +6,6 @@ def element_at(my_list, idx):
 
     Return: element at idx
     """
-    print("len(my_list): {:d}".format(-len(my_list)))
     if idx > len(my_list) or idx < -(len(my_list)):
         return None
     else:
