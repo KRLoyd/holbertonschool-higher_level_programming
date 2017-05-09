@@ -6,7 +6,7 @@ def replace_in_list(my_list, idx, element):
 
     Returns: modified list, or original list if idx is out of range
     """
-    if idx > len(my_list):
+    if idx > len(my_list) or idx < -(len(my_list)):
         return my_list
     else:
         my_list[idx] = element
