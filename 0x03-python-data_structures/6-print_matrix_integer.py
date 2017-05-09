@@ -11,9 +11,10 @@ def print_matrix_integer(matrix=[[]]):
     # Check if matrix is empty
     if len(matrix[0]) is 0 and len(matrix) is 1:
         print()
+        return
 
     # Print the matrix
-    for row in matrix:
-        for element in row:
-            print("{:d}".format(element), end=" ")
+    for row in range(len(matrix)):
+        for element in range(len(matrix[row])):
+            print("{:d}".format(matrix[row][element]), end=" ")
         print()
