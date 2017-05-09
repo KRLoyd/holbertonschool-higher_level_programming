@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+def no_c(my_string):
+    """ My function that removes all characters c and C from a string.
+
+    Arg: string to evaluate
+
+    Return: new string
+    """
+    new_string = ""
+    for i in range(0, len(my_string)):
+        if my_string[i] != 'c' and my_string[i] != 'C':
+            new_string += my_string[i]
+    return new_string
