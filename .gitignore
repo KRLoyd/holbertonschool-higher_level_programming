@@ -23,3 +23,6 @@
 # Ignore _putchar.c and a.out
 **/_putchar.c
 **/a.out
+
+# Ignore __pycache__
+**/__pycache__
