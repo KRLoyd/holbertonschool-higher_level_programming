@@ -13,7 +13,7 @@ def max_integer(my_list=[]):
     if list_len is 0:
         return None
     # List isn't empty
-    temp = 0
+    temp = my_list[0]
     i = 0
     while i < list_len:
         if my_list[i] > temp:
