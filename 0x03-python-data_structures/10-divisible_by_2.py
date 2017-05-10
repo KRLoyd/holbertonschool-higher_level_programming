@@ -4,7 +4,7 @@ def divisible_by_2(my_list=[]):
 
     Arg: list to evaluate
 
-    Return: list with "True" or "False" depending on if the integer at that 
+    Return: list with "True" or "False" depending on if the integer at that
     same position in the original list is a multiple of 2.
     """
     result_list = []
