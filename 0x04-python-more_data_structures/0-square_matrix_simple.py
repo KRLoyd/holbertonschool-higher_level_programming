@@ -17,7 +17,7 @@ def square_matrix_simple(matrix=[]):
     # Create new_matrix
     new_matrix = []
 
-    # Iterate through matrix rows 
+    # Iterate through matrix rows
     for row in matrix:
         # make new_row
         new_row = list(map(lambda x: x**2, row))
