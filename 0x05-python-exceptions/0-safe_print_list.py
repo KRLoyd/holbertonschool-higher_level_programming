@@ -10,7 +10,7 @@ def safe_print_list(my_list=[], x=0):
     """
     # Set print counter to 0
     printed = 0
-    # Iterate through list
+    # Iterate up to x
     for i in range(0, x):
         # Try to print the list
         try:
@@ -19,5 +19,6 @@ def safe_print_list(my_list=[], x=0):
         # Handle exceptions
         except (NameError, IndexError, TypeError):
             break
+    # Always print a new line
     print()
     return printed
