@@ -13,7 +13,7 @@ def safe_print_list(my_list=[], x=0):
         printed = 0
         for i, element in enumerate(my_list):
             if i < x:
-                print("{:d}".format(element), end="")
+                print("{}".format(element), end="")
                 printed += 1
                 i += 1
     # Except: any error encountered
