@@ -17,7 +17,7 @@ def safe_print_list(my_list=[], x=0):
                 printed += 1
         print()
         return printed
-    # Except: any error encountered
-    except:
+    # Excep(t: any error encountered
+    except (NameError, IndexError, TypeError):
         print()
         return printed
