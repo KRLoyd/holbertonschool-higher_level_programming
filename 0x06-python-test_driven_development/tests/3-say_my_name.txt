@@ -1,0 +1,38 @@
+The ``3-say_my_name`` module
+============================
+Using ``say_my_name``
+---------------------
+
+First import ``say_my_name`` from the ``3-say_my_name`` module:
+
+      >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Now use it:
+
+    # FN: string, LN: string
+    >>> say_my_name("Kristen", "Stewart")
+    My name is Kristen Stewart
+
+    # FN: not a string, LN: string
+    >>> say_my_name(42, "Happy")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+    # FN: string, LN: not a string
+    >>> say_my_name("John", [1, 2])
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+    # FN: string, LN: None
+    >>> say_my_name("Yoyo", None)
+    Traceback (most recent call last):
+    TypeError: non-empty format string passed to object.__format__    
+
+    # FN: empty, LN: empty
+    >>> say_my_name()
+    Traceback (most recent call last):
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+    
+    # only FN
+    >>> say_my_name("OnlyOne")
+    My name is OnlyOne 
