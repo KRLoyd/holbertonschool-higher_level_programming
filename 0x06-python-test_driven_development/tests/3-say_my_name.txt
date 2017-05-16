@@ -26,8 +26,13 @@ Now use it:
     # FN: string, LN: None
     >>> say_my_name("Yoyo", None)
     Traceback (most recent call last):
-    TypeError: non-empty format string passed to object.__format__    
+    TypeError: non-empty format string passed to object.__format__
 
+    # FN: None, LN: string
+    >>> say_my_name(None, "Sexy")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+    
     # FN: empty, LN: empty
     >>> say_my_name()
     Traceback (most recent call last):
@@ -36,3 +41,8 @@ Now use it:
     # only FN
     >>> say_my_name("OnlyOne")
     My name is OnlyOne 
+
+    # FN: num, LN: num
+    >>> say_my_name(3, 56)
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
