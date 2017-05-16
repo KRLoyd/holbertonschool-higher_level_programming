@@ -40,3 +40,12 @@ Now use it:
     # matrix with int and True, False, div is 2
     >>> print(matrix_divided([[True, False, 3], [4.0, 5.5, 6.2]], 2))
     [[0.5, 0.0, 1.5], [2.0, 2.75, 3.1]]
+
+    # uniform matrix, div is 3.2
+    >>> print(matrix_divided([[1, 2, 3], [4, 5, 6]], 3.2))
+    [[0.31, 0.62, 0.94], [1.25, 1.56, 1.88]]
+
+    # uniform matrix, div is "2"
+    >>> print(matrix_divided([[1, 2, 3], [4, 5, 6]], "2"))
+    Traceback (most recent call last):
+    TypeError: div must be a number
