@@ -12,7 +12,7 @@ def matrix_divided(matrix, div):
     # Check if div is 0
     if div == 0:
         raise ZeroDivisionError("division by zero")
-    
+
     # Check if div is int or float
     if isinstance(div, (int, float)) is False:
         raise TypeError("div must be a number")
@@ -31,7 +31,8 @@ def matrix_divided(matrix, div):
     for row in matrix:
         for element in row:
             if isinstance(element, (int, float)) is False:
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError("matrix must be a "
+                                "matrix (list of lists) of integers/floats")
 
     # Iterate through the matrix rows
     for row in matrix:
