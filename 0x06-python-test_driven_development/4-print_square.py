@@ -12,8 +12,8 @@ def print_square(size):
     if isinstance(size, float) is True:
         if size < 0:
             raise TypeError("size must be an integer")
-        else:  # change float to int
-            size = int(size)
+        else:  # round float and change to int
+            size = int(round(size))
     
     # Check if size < 0
     if size < 0:
