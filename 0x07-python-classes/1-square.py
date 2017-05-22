@@ -7,7 +7,7 @@ class Square:
 
     Field: size
     """
-    def __init__(self, size=""):
+    def __init__(self, size=0):
         """ __init__ method
 
         instantiation of size
