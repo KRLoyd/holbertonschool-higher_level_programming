@@ -38,3 +38,34 @@ my_square_3 = Square(3, (1, 0))
 my_square_3.my_print()
 
 print("--")
+print("--")
+try:
+    print("Square(3, (1, \"3\"))")
+    my_square_3 = Square(3, (1, "3"))
+    my_square_3.my_print()
+except Exception as e:
+    print(e)
+
+print("--")
+try:
+    print("Square(3, \"Position\")")
+    my_square_3 = Square(3, "Position")
+    my_square_3.my_print()
+except Exception as e:
+    print(e)
+
+print("--")
+try:
+    print("Square(3, (1,))")
+    my_square_3 = Square(3, (1,))
+    my_square_3.my_print()
+except Exception as e:
+    print(e)
+
+print("--")
+try:
+    print("Square(3, (1, -3))")
+    my_square_3 = Square(3, (1, -3))
+    my_square_3.my_print()
+except Exception as e:
+    print(e)
