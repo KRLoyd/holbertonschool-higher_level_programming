@@ -24,8 +24,13 @@ Expected Success:
 	 >>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
 	 Area: 0 for size: 0
 
+	 # check type setter - value is int
+	 >>> my_square.size = 5
+	 >>> print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+	 Area: 25 for size: 5
+	 
 Expected Failure:
-	 # size is not int
+	 # size is string
 	 >>> my_square = Square("Hello")
 	 Traceback (most recent call last):
 	 TypeError: size must be an integer
@@ -34,3 +39,79 @@ Expected Failure:
 	 >>> my_square = Square(-17)
 	 Traceback (most recent call last):
 	 ValueError: size must be >= 0
+
+	 # size is boolean (True)
+	 >>> my_square = Square(True)
+	 Traceback (most recent call last):
+	 TypeError: size must be an integer
+
+	 # size is boolean (False)
+	 >>> my_square = Square(False)
+	 Traceback (most recent call last):
+	 TypeError: size must be an integer
+
+	 # size is None
+	 >>> my_square = Square(None)
+	 Traceback (most recent call last):
+	 TypeError: size must be an integer
+
+	 # size is list
+	 >>> my_square = Square([1, 2, 3, 4])
+	 Traceback (most recent call last):
+	 TypeError: size must be an integer
+
+	 # size is dict
+	 >>> my_square = Square({'name':'Kristen'})
+	 Traceback (most recent call last):
+	 TypeError: size must be an integer
+
+	 # size is set
+	 >>> my_square = Square({1, 2, 3})
+	 Traceback (most recent call last):
+	 TypeError: size must be an integer
+
+	 # size is tuple
+	 >>> my_square = Square((1, 3))
+	 Traceback (most recent call last):
+	 TypeError: size must be an integer
+
+	 # check type setter - value is string
+	 >>> my_square = Square(9)
+	 >>> my_square.size = "size"
+	 Traceback (most recent call last):
+	 TypeError: size must be an integer
+
+	 # check type setter - value is boolean (True)
+	 >>> my_square.size = True
+	 Traceback (most recent call last):
+	 TypeError: size must be an integer
+
+	 # check type setter - value is boolean (False)
+	 >>> my_square.size = False
+	 Traceback (most recent call last):
+	 TypeError: size must be an integer
+
+	 # check type setter - value is list
+	 >>> my_square.size = (1, 3, 4)
+	 Traceback (most recent call last):
+	 TypeError: size must be an integer
+
+	 # check type setter - dict
+	 >>> my_square.size = {'age':26}
+	 Traceback (most recent call last):
+	 TypeError: size must be an integer
+
+	 # check type setter - tuple
+	 >>> my_square.size = (3, 4)
+	 Traceback (most recent call last):
+	 TypeError: size must be an integer
+
+	 # check type setter - None
+	 >>> my_square.size = None
+	 Traceback (most recent call last):
+	 TypeError: size must be an integer
+
+	 # check type instantiation - None
+	 >>> my_square = Square(None)
+	 Traceback (most recent call last):
+	 TypeError: size must be an integer
