@@ -82,7 +82,7 @@ class Square:
         else:
             raise TypeError(
                 "position must be a tuple of 2 positive integers")
-        # check position 1 
+        # check position 1
         if position[1]:
             if type(position[1]) is not int:
                 raise TypeError(
