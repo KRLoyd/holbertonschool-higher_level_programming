@@ -3,7 +3,10 @@
 
 
 class Rectangle:
-    """ Rectangle class"""
+    """ Rectangle class
+
+    Instantiation of number_of_instances.
+    """
 
     number_of_instances = 0
 
@@ -62,7 +65,7 @@ class Rectangle:
 
         Returns area of the rectangle.
         """
-        return  (self.__width * self.__height)
+        return (self.__width * self.__height)
 
     def perimeter(self):
         """ perimeter method
