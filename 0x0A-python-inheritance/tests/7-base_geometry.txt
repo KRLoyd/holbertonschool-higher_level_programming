@@ -97,3 +97,8 @@ Expected Failure:
 	  >>> base.integer_validator("dict", {'key':'value'})
 	  Traceback (most recent call last):
 	  TypeError: dict must be an integer
+
+	  # name: string, value: string
+	  >>> base.integer_validator("string", "another string")
+	  Traceback (most recent call last):
+	  TypeError: string must be an integer
