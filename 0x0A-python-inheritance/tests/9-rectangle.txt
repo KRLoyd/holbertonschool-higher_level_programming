@@ -1,0 +1,111 @@
+The ``9-rectangle`` module
+=======================
+
+Using ``Rectangle``
+---------------
+
+First import ``Rectangle`` from the ``9-rectangle`` module:
+
+      >>> Rectangle = __import__('9-rectangle').Rectangle
+
+Then, import ``BaseGeometry`` from the ``7-base_geometry`` module:
+
+      >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Check for docstrings:
+      # module docstring
+      >>> print(__import__("9-rectangle").__doc__)
+      module to define class Rectangle
+
+      # class docstring
+      >>> print(__import__("9-rectangle").Rectangle.__doc__)
+      class Rectangle
+      <BLANKLINE>
+	  Parent class: BaseGeometry (module 7-base_geometry.py)
+      <BLANKLINE>
+
+
+      # Function docstrings
+      ## Inside class
+      ### __init__ 
+      >>> print(__import__("9-rectangle").Rectangle.__init__.__doc__)
+      method __init__
+      <BLANKLINE>
+              Instantiation of:
+              - width
+              - height
+      <BLANKLINE>
+
+      ### area
+      >>> print(__import__("9-rectangle").Rectangle.area.__doc__)
+      method area
+      <BLANKLINE>
+              Returns rectangle's width * height
+      <BLANKLINE>
+
+      ### __str__
+      >>> print(__import__("9-rectangle").Rectangle.__str__.__doc__)
+      method __str__
+      <BLANKLINE>
+              Prints description in following format:
+              [Rectangle] <width>/<height>
+      <BLANKLINE>
+
+      ## Outside class
+      None
+
+Expected Success:
+	  # width: pos int, height: pos int
+	  >>> my_rect = Rectangle(4, 5)
+	  >>> my_rect.__str__()
+	  '[Rectangle] 4/5'
+	  >>> print(my_rect)
+	  [Rectangle] 4/5
+	  >>> print(my_rect.area())
+	  20
+
+Expected Failure:
+	  # width: pos int, height: 0
+	  >>> my_rect = Rectangle(4, 0)
+	  Traceback (most recent call last):
+	  ValueError: height must be greater than 0
+
+	  # width: 0, height: pos int
+	  >>> my_rect = Rectangle(0, 4)
+	  Traceback (most recent call last):
+	  ValueError: width must be greater than 0
+
+	  # width: pos int, height: neg int
+	  >>> my_rect = Rectangle(8, -9)
+	  Traceback (most recent call last):
+	  ValueError: height must be greater than 0
+
+	  # width: neg int, height: pos int
+	  >>> my_rect = Rectangle(-4, 9)
+	  Traceback (most recent call last):
+	  ValueError: width must be greater than 0
+
+ 	  # width: pos int, height: string
+	  >>> my_rect = Rectangle(3, "alot")
+	  Traceback (most recent call last):
+	  TypeError: height must be an integer
+
+	  # width: list, height: pos int
+	  >>> my_rect = Rectangle([1, 2, 3], 5)
+	  Traceback (most recent call last):
+	  TypeError: width must be an integer
+	  
+	  # width: pos int, height: dict
+	  >>> my_rect = Rectangle(8, {'key':'value'})
+	  Traceback (most recent call last):
+	  TypeError: height must be an integer
+
+	  # width: set, height: pos int
+	  >>> my_rect = Rectangle({3, 4, 5}, 5)
+	  Traceback (most recent call last):
+	  TypeError: width must be an integer
+
+	  # width: pos int, height: bool
+	  >>> my_rect = Rectangle(4, True)
+	  Traceback (most recent call last):
+	  TypeError: height must be an integer
