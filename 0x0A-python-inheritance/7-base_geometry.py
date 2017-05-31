@@ -4,10 +4,10 @@
 
 class BaseGeometry:
     """Class BaseGeometry"""
-    
+
     def area(self):
         """method area
-        
+
         Raises an Exception with the following message:
         message: area() is not implemented
         """
