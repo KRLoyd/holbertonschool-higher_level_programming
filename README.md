@@ -1,7 +1,7 @@
 # holbertonschool-higher_level_programming
 
 ## Project types
-This repository holds folders for Python 3 projects. 
+This repository holds folders for Python 3 projects.
 
 ## Projects
 [0x00-python-hello_world](0x00-python-hello_world)
