@@ -26,9 +26,6 @@ if __name__ == "__main__":
     # Commit the added state
     my_session.commit()
     # Print the id of State added (new_state)
-    check_new_state = my_session.query(State).
-    filter(State.name == 'Louisiana').
-    first()
-    print(check_new_state.id)
+    print("{}".format(new_state.id))
     # Close the session
     my_session.close()
