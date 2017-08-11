@@ -15,8 +15,8 @@ if __name__ == "__main__":
                                user=argv[1], passwd=argv[2], db=argv[3])
     cursor = database.cursor()
     # Get the info wanted
-    cursor.execute("SELECT * FROM states WHERE name=%s \
-    ORDER BY id ASC", (argv[4],))
+    cursor.execute("SELECT * FROM states WHERE \
+    name = '{:s} ORDER BY id ASC".format(argv[4]))
     results = cursor.fetchall()
     # Print info
     for row in results:
