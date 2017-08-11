@@ -15,7 +15,7 @@ if __name__ == '__main__':
     cursor = database.cursor()
     # Get info from table
     cursor.execute("SELECT states.id, states.name \
-    FROM states WHERE states.name LIKE 'N%'")
+    FROM states WHERE states.name LIKE BINARY 'N%' ORDER BY id ASC")
     result = cursor.fetchall()
     # Print info
     for row in result:
