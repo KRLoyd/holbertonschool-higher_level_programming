@@ -14,8 +14,8 @@ if __name__ == '__main__':
                                user=argv[1], passwd=argv[2], db=argv[3])
     cursor = database.cursor()
     # Get info from table
-    cursor.execute("SELECT states.id, states.name
-                   FROM states WHERE states.name LIKE 'N%'")
+    cursor.execute("SELECT states.id, states.name \
+    FROM states WHERE states.name LIKE 'N%'")
     result = cursor.fetchall()
     # Print info
     for row in result:
