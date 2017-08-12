@@ -15,7 +15,7 @@ if __name__ == "__main__":
     result = cursor.fetchall()
     """Print results"""
     for row in result:
-        print (row)
+        print(row)
     """Close cursor and connection to database"""
     cursor.close()
     database.close()
