@@ -21,6 +21,9 @@ if __name__ == "__main__":
     my_session = Session()
     # my_session work
     object = my_session.query(State).order_by(State.id).first()
-    print("{}: {}".format(object.id, object.name))
+    if object:
+        print("{}: {}".format(object.id, object.name))
+    else:
+        print("Nothing")
     # Close session
     my_session.close()
