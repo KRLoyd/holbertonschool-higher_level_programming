@@ -15,7 +15,9 @@ if __name__ == '__main__':
     # request the head of  URL
     req = requests.get(url_val)
     # Get the variable X-Request-Id from header
-    req_var = req.headers['x-request-id']
-
-    # Print it
-    print(req_var)
+    try:
+        req_var = req.headers['x-request-id']
+        # Print it
+        print(req_var)
+    except:
+        print("None")
