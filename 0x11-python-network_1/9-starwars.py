@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     # Find size of the dictionary
     dict_len = len(req_json)
-    print("Number of result: {}".format(dict_len))
+    print("Number of results: {}".format(dict_len))
 
     # Print the names in the dictionary
     for item in req_json:
