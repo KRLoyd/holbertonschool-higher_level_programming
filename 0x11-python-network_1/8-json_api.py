@@ -11,7 +11,7 @@ if __name__ == "__main__":
 
     # Check passed parameter
     if len(argv) < 2 or not argv[1].isalpha():
-        print("No Result")
+        print("No result")
     else:
         # Set value to the q variable and passed param
         value = {'q': argv[1]}
