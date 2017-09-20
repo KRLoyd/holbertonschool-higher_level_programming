@@ -9,9 +9,9 @@ if (isNaN(squareSize)) {
   }
 }
 function getSquareRow (size) {
-  let tempRow = 'x';
+  let tempRow = 'X';
   for (let i = 0; i < size - 1; i++) {
-    tempRow += 'x';
+    tempRow += 'X';
   }
   return tempRow;
 }
