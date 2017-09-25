@@ -7,10 +7,15 @@ function Rectangle (w, h) {
     this.width = w;
     this.height = h;
   }
+  this.print = function () {
+    for (let i = 0; i < this.height; i++) {
+      console.log('X'.repeat(this.width));
+    }
+  };
 }
 
-Rectangle.prototype.print = function () {
-  for (let i = 0; i < this.height; i++) {
-    console.log('X'.repeat(this.width));
-  }
-};
+// Rectangle.prototype.print = function () {
+//   for (let i = 0; i < this.height; i++) {
+//     console.log('X'.repeat(this.width));
+//   }
+// };
