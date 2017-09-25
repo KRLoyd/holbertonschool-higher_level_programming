@@ -79,6 +79,11 @@ Function that prints the number of arguments already printed and the new argumen
   * @item: item to print
 * Output format: `<number of arguments already printed>: <current argument value>`
 
+##### [10-converter.js](10-converter.js)
+Function to convert a number from base 10 to another base passes as argument.
+* Prottoype: `exports.converter = function (base)`
+  * @base: base to convert to from base 10
+
 #### [mains](mains)
 Folder to hold all main files to test JavaScript scripts in this directory.
 
