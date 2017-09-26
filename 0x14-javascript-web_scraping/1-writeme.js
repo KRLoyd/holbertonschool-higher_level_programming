@@ -6,7 +6,7 @@ let fileName = process.argv[2];
 let stringToWrite = process.argv[3];
 
 fs.writeFile(fileName, stringToWrite, 'utf8', function (err) {
-    if (err) {
-	console.log(err);
-    }
+  if (err) {
+    console.log(err);
+  }
 });
