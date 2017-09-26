@@ -12,8 +12,8 @@ request(requestURL, function (error, response, body) {
     let movieResults = theBody.results;
     let count = 0;
     for (let movieCount = 0;
-	 movieCount < theBody.count;
-         movieCount++) {
+       movieCount < theBody.count;
+       movieCount++) {
       if (movieResults[movieCount].characters.includes(characterToFind)) {
         count = count + 1;
       }
