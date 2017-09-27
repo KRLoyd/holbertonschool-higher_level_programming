@@ -84,6 +84,13 @@ Function to convert a number from base 10 to another base passes as argument.
 * Prottoype: `exports.converter = function (base)`
   * @base: base to convert to from base 10
 
+##### [100-map.js](100-map.js)
+Script to import an array and compute a new array.
+* Notes:
+  * array to be imported is held in file [100-data.js](100-data.js)
+  * New list is created with each value equal to the value of the initial list, multiplied by the index in the list.
+  * Both the original and new list are printed
+
 #### [mains](mains)
 Folder to hold all main files to test JavaScript scripts in this directory.
 
