@@ -9,12 +9,12 @@ request(requestURL, function (error, response, body) {
     console.log(error);
   } else {
     let theBody = JSON.parse(body);
-    let movieResults = theBody.results;
+    let movieList = theBody.results;
     let count = 0;
-    for (let movie in movieResults) {
-      let characters = movieResults[movie].characters;
-      for (let character in characters) {
-        if (characters[character].includes(characterToFind)) {
+    for (let movie in movieList) {
+      let characterList = movieList[movie].characters;
+      for (let character in characterList) {
+        if (characterList[character].includes(characterToFind)) {
           count = count + 1;
         }
       }
