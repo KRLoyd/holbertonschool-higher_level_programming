@@ -12,14 +12,14 @@ request(requestURL, function (error, response, body) {
     let characterList = JSON.parse(body).characters;
     for (let characterURL in characterList) {
       request(characterList[characterURL],
-	      function (error, response, body) {
-        if (error) {
-          console.log(error);
-        } else {
-          let name = JSON.parse(body).name;
-	  console.log(name);
-        }
-      });
+              function (error, response, body) {
+                if (error) {
+                  console.log(error);
+                } else {
+                  let name = JSON.parse(body).name;
+                  console.log(name);
+                }
+              });
     }
   }
 });
