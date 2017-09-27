@@ -43,6 +43,11 @@ Script to get the contents of a webpage and store it in a file.
 Script to compute the number of tasks completed by user id.
 * Usage: `./6-completed_tasks.js https://jsonplaceholder.typicode.com/todos`
 
+##### [100-starwars_characters.js](100-starwars_characters.js)
+Script to print all characters of a Star Wars movie.
+* Usage: `./100-starwars_characters.js <movie id>`
+
+
 ## Authors
 Kristen Loyd        [Github](https://github.com/KRLoyd) |  [LinkedIn](https://www.linkedin.com/in/kristen-loyd-34984a92)
 
