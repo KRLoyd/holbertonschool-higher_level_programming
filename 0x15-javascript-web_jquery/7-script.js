@@ -1,4 +1,4 @@
-// Script to fetch 'name' from URL 'http://swapi.co/api/prople/5/?format=json'
+// Script to fetch 'name' from URL
 // 'name' is then displayed in HTML tag 'DIV#character'
 const $ = window.$;
 const requestURL = 'https://swapi.co/api/people/5/?format=json';
