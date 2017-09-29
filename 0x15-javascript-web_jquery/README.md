@@ -13,7 +13,6 @@ All files are `semistandard` compliant with the flag `--global`.
 Information about this style can be found at https://standardjs.com/rules.html and https://github.com/Flet/semistandard .
 
 ## Files
-All files must be executable to run. To add executable permissions to any file: `chmod u+x file_name`
 
 ##### [0-script.js](0-script.js)
 Script to update the text color of the HTML tag `HEADER` to red (`#FF0000`).
