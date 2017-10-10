@@ -1,4 +1,4 @@
-# Project Name
+# 0x0D. SQL - Introduction
 
 ## Description
 Scripts in this folder correspond to Holberton School tasks to begin working with MySQL.
