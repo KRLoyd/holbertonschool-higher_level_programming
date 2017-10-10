@@ -1,7 +1,7 @@
 # 0x08. Python - More Classes and Objects
 
 ## Purpose
-The tasks in this folder correspond with a Holberton School project to work with classes and oobjects in Python, specifiacally working with inheritance. 
+The tasks in this folder correspond with a Holberton School project to work with classes and oobjects in Python. 
 
 ### Project Notes
 #### Environment
